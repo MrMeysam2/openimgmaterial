@@ -1,0 +1,14 @@
+<mat-grid-list cols="2" rowHeight="2:1">
+  <mat-grid-tile>
+    <div *ngFor="let img of images; let i = index">
+      <button
+        id="basic"
+        type="button"
+        mat-stroked-button
+        (click)="openimg(img)"
+      >
+        {{ img.name }}
+      </button>
+    </div></mat-grid-tile
+  >
+</mat-grid-list>
